@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(194, 212, 240);
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 10px;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    background-color: rgba(181, 252, 228, 0.637);
+    margin-top: 0;
+    margin: auto;
+}
+
+img {
+    max-width: 300px;
+    width: 50%;
+}
+
+div {
+    border: 1px solid gray;
+}
+
+.doboz{
+    padding: 15px;
+}
+
+/*töréspontok megadása*/
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(194, 212, 240);
+    }
+
+    main {
+        max-width: 100%;
+        width: 100%;
+        font-size: 6vw;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .doboz{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main {
+        background-color: rgb(159, 228, 168);
+        color: rgb(180, 131, 221);
+        font-size: 10vw;
+        grid-template-columns: 1fr;
+    }
+}
